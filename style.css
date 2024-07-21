@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: "Poppins", sans-serif; */
+    
+}
+.main{
+   background-image: url(items/photo/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(100vw,1000px);
+}
+.color{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.43;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+}
+.nav{
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.nav img{
+    width: 142px;
+    position: relative;
+    z-index: 10;
+}
+.nav button{
+    position: relative;
+    z-index: 10;
+}
+.main .elements{
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+}
+.main .elements .firsttext{
+    font-size: 38px;
+    font-weight: 900;
+}
+.main .elements .secondtext{
+    font-size: 24px;
+    font-weight: 500;
+}
+.main .elements .thirdtext{
+    font-size: 20px;
+    font-weight: 500;
+}

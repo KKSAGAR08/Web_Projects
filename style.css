@@ -7,6 +7,9 @@
     /* font-family: "Poppins", sans-serif; */
     
 }
+body{
+    background-color: black;
+}
 .main{
    background-image: url(items/photo/bg.jpg);
     height: 100vh;
@@ -18,13 +21,13 @@
 .color{
     width: 100%;
     height: 100vh;
-    opacity: 0.43;
+    opacity: 0.7;
     background-color: black;
     position: absolute;
     top: 0px;
 }
 .nav{
-    max-width: 85vw;
+    max-width: 92vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -42,7 +45,7 @@
     z-index: 10;
 }
 .main .elements{
-    height: 100%;
+    height: calc(100% - 48px);
     position: relative;
     z-index: 10;
     display: flex;
@@ -55,12 +58,25 @@
 .main .elements .firsttext{
     font-size: 38px;
     font-weight: 900;
+    text-align: center;
 }
 .main .elements .secondtext{
     font-size: 24px;
     font-weight: 500;
+    text-align: center;
 }
 .main .elements .thirdtext{
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
+}
+.main .elements input{
+    color: white;
+    background-color: black;
+    border: 10px black solid;
+}
+.main .separation{
+    height: 10px;
+    background-color: grey;
+
 }

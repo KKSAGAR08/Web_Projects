@@ -75,7 +75,7 @@ body {
   border: 0.5px solid rgb(182, 161, 161);
   border-radius: 5px;
 }
-.main .separation {
+.separation {
   height: 10px;
   background-color: grey;
 }
@@ -93,6 +93,15 @@ body {
   margin-left: 15px;
   border-radius: 5px;
 }
+.btn-lang{
+  padding: 3px 23px 3px 23px;
+  border: 1px solid rgb(182, 161, 161);
+  background-color: rgba(0, 0, 0, 0.034);
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 800;
+  color: white;
+  border-radius: 5px;
+}
 .elements2 {
   display: flex;
   align-items: center;
@@ -106,7 +115,45 @@ body {
   color: white;
   font-family: "Martel Sans", sans-serif;
   font-size: 24px;
-  padding: 7px 52px 0px 14px;
+  padding: 7px 30px 0px 14px;
   border: none;
   border-radius: 5px;
 }
+.first{
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+}
+.first .text{
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+section.first > div.text :nth-child(1){
+  font-family: "Martel Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+}
+section.first > div.text :nth-child(2),:nth-child(3),:nth-child(4){
+  font-family: "Martel Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.first .tv img{
+  max-width: 35vw;
+  max-height: 50vh;
+  position: relative;
+  z-index: 10;
+  top: 40px;
+}
+.first .tv video{
+  position: absolute;
+  top: 71px;
+  right: 234px;
+  width: 25vw;
+}
+

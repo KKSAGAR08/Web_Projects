@@ -286,6 +286,40 @@ font-family: "Martel Sans", sans-serif;
   font-size: 2em;
   font-weight: 900;
 }
-
+.faq{ 
+  font-size: 24px;
+  height: 100vh;
+}
+.faq .title{
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 2em;
+  height: 20vh;
+  font-weight: 900;
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+.faq .question{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+.faq .question button{
+    width: 75vw;
+    display: flex;
+    text-align: start;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    padding: 18px;
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
 
 

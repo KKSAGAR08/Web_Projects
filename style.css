@@ -152,7 +152,7 @@ section.first > div.text :nth-child(2),:nth-child(3),:nth-child(4){
 }
 .first .tv video{
   position: absolute;
-  top: 71px;
+  top: 110px;
   right: 234px;
   width: 25vw;
 }
@@ -177,25 +177,28 @@ section.first > div.text :nth-child(2),:nth-child(3),:nth-child(4){
   justify-content: center;
   flex-direction: column;
   position: relative;
-  top: 24px;
+  
 }
 .second  div.text1 :nth-child(1){
   font-family: "Martel Sans", sans-serif;
   font-size: 48px;
   font-weight: 900;
   color: white;
+  height: 10vh;
 }
 .second  div.text1 :nth-child(2){
   font-family: "Martel Sans", sans-serif;
   font-size: 48px;
   font-weight: 900;
   color: white;
+  height: 10vh;
 }
 .second  div.text1 :nth-child(3){
   font-family: "Martel Sans", sans-serif;
   font-size: 48px;
   font-weight: 900;
   color: white;
+  height: 10vh;
 }
 .second  div.text1 :nth-child(4){
   font-family: "Martel Sans", sans-serif;
@@ -207,5 +210,82 @@ font-family: "Martel Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
 }
+.third{
+  height: 70vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.third .text3{
+  width: 50%;
+  color: white;
+  font-size: 24px;
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 130px;
+}
+.third .tv2{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.third .tv2 img{
+  top: 0px;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  z-index: 10;
+}
+.third .tv2 video{
+  position: absolute; 
+  top: 7px;
+  right: 245px;
+  width: 20vw;
+  height: 50vh;
+}
+.third div.text3 :nth-child(1){
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.fourth{
+  height: 70vh;
+  box-sizing: border-box;
+  display: flex;
+ justify-content: center; 
+}
+.fourth .kids{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.fourth .kids img{
+  width: 80%;
+  height: 70%;
+}
+.fourth .text4{
+  width: 50%;
+  color: white;
+  font-size: 24px;
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 100px;
+}
+.fourth  div.text4 :nth-child(1){
+  font-size: 2em;
+  font-weight: 900;
+}
+
 
 

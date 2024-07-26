@@ -295,7 +295,7 @@ font-family: "Martel Sans", sans-serif;
 .faq .title{
   font-family: "Martel Sans", sans-serif;
   font-size: 2em;
-  height: 20vh;
+  margin-bottom: 10vh;
   font-weight: 900;
   position: relative;
   top: 50px;
@@ -310,6 +310,7 @@ font-family: "Martel Sans", sans-serif;
   gap: 7px;
  
 }
+
 .faq .question button{
     width: 75vw;
     display: flex;
@@ -323,6 +324,9 @@ font-family: "Martel Sans", sans-serif;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+}
+.faq .question :hover{
+  background-color: rgb(63, 61, 61);
 }
 .faq .text5{
       padding-top: 40px;
@@ -341,6 +345,7 @@ footer{
   font-size: 16px;
   font-weight: 400;
 }
+
 footer .q1{
   margin-bottom: 20px;
 }
@@ -350,6 +355,7 @@ footer .q1{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 20px;
 }
+
 .footer-item{
   display: flex;
   flex-direction: column;

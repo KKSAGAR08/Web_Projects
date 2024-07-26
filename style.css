@@ -4,6 +4,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   /* font-family: "Poppins", sans-serif; */
 }
 body {
@@ -76,8 +77,8 @@ body {
   border-radius: 5px;
 }
 .separation {
-  height: 10px;
-  background-color: grey;
+  height: 8px;
+  background-color: rgba(81, 80, 80, 0.5);
 }
 .btn {
   padding: 3px;
@@ -288,10 +289,10 @@ font-family: "Martel Sans", sans-serif;
 }
 .faq{ 
   font-size: 24px;
-  height: 100vh;
+  height: 123vh;
+  color: white;
 }
 .faq .title{
-  color: white;
   font-family: "Martel Sans", sans-serif;
   font-size: 2em;
   height: 20vh;
@@ -307,6 +308,7 @@ font-family: "Martel Sans", sans-serif;
   align-items: center;
   flex-direction: column;
   gap: 7px;
+ 
 }
 .faq .question button{
     width: 75vw;
@@ -320,6 +322,48 @@ font-family: "Martel Sans", sans-serif;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
+.faq .text5{
+      padding-top: 40px;
+      font-weight: 600;
+      font-size: 22px;
+}
+
+footer{
+  color: white;
+  max-width: 70vw;
+  height: 50vh;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .q1{
+  margin-bottom: 20px;
+}
+.footer{
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-item a{
+  color: white;
+  font-size: 14px;
+}
+.india{
+  margin-top: 15px;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 14px;
+}
+
 
 

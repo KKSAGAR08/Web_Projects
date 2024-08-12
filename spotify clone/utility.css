@@ -1,0 +1,23 @@
+.border{
+    border: 2px solid black;
+    margin: 4px;
+    border-radius: 10px;
+}
+.display{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.invert{
+    filter: invert(1);
+}
+.p-1{
+    padding: 5px;
+}
+.m-2{
+    margin: 100px;
+}

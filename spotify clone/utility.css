@@ -1,3 +1,6 @@
+* {
+    scrollbar-width: none; 
+}
 .border{
     margin: 5px;
     border: 2px solid red;
@@ -7,6 +10,7 @@
 }
 .right{
     width: 75vw;
+    position: relative;
 }
 .invert{
     filter: invert(1);

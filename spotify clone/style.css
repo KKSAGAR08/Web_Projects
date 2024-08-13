@@ -49,8 +49,49 @@ body{
 .nav{
     display: flex;
     height: 70px;
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(16, 16, 16);
     align-items: center;
     padding: 0px 20px;
     justify-content: space-between;
+}
+.nav button{
+    padding: 10px 32px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.popup{
+    background-color: transparent; 
+    color: #b3b3b3;
+}
+.popup:hover{
+    color: white;
+}
+.title{
+    font-weight: 700;
+    font-size: 24px;
+}
+.spotifyPlaylist{
+    padding: 10px 15px;    
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 170px;
+    margin: 10px 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.cards span{
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.cards img{
+    width: 165px;
+    object-fit: contain;
+    border-radius: 10px;
 }

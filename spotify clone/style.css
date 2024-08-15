@@ -132,7 +132,7 @@ body{
 }
 .music-nav-button{
     position: absolute;
-    bottom: 15px;
+    bottom: 25px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -141,20 +141,25 @@ body{
 .music-nav-button img{
     width: 35px;
     filter: invert(1);
+    cursor: pointer;
 }
 .songlist{
-    padding: 15px 15px;
+    padding: 15px 15px 15px 15px;
+    height: 352px;
+    overflow-y: scroll;
+    
 }
 .songlist ul li{
     list-style-type: decimal;
     display: flex;
     gap: 20px;
-    border: 0.5px white solid;
+    border: 0.5px #595858 solid;
     padding: 1px 10px;
     margin: 0px 0px 8px 0px;
     font-size: 14px;
-    border-radius: 3px;
-    cursor: pointer;
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
 }
 .songlist img{
     width: 20px;
@@ -162,8 +167,39 @@ body{
 .songInfo{
     font-size: 13px;
     width: 70px;
+    width: 130px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
+    cursor: pointer;
 }
-
+.playsong{
+    width: 70px;
+    
+}
+.rangeslider{
+    width: 99%;
+    background-color: white;
+    height: 4px;
+    position: absolute;
+    bottom: 15px;
+    border-radius: 10px;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: wheat;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    cursor: pointer;
+    transition: left 0.5s;
+}
+.songDetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 100;
+}

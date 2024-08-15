@@ -6,10 +6,10 @@
     border: 2px solid red;
 }
 .left{
-    width: 25vw;
+    width: 27vw;
 }
 .right{
-    width: 75vw;
+    width: 73vw;
     position: relative;
 }
 .invert{
@@ -30,7 +30,7 @@
     margin-top: 10px;
 }
 .p-2{
-    padding: 0px 15px
+    padding: 0px 15px 25px;
 }
 .m-3{
     margin: 1px 0px ;

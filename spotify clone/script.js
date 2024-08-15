@@ -1,3 +1,4 @@
+let currentsong = new Audio();
 async function getsongs(){
     let song= await fetch("http://127.0.0.1:5500/playlist_songs/");
     let response = await song.text();
@@ -15,6 +16,23 @@ async function getsongs(){
     }
     return songs;
 }
+
+
+
+function secondsToMinutesSeconds(seconds) {
+    if (isNaN(seconds) || seconds < 0) {
+        return "00:00";
+    }
+
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor(seconds % 60);
+
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+
+    return `${formattedMinutes}:${formattedSeconds}`;
+}
+
 
 
 async function getsongs_Name(){
@@ -37,19 +55,73 @@ async function getsongs_Name(){
 }
 
 
+
+function playaudio(track,player=false){
+    currentsong.src="/playlist_songs/"+track;
+    if(!player){
+        currentsong.play();
+        play.src="buttons/pause-button.svg";
+    }
+        document.querySelector(".songDuration").innerHTML="00 / 00";
+        document.querySelector(".songName").innerHTML=decodeURI(track);      
+}
+
+
+
+
 async function main(){
     let songs_Name = await getsongs_Name();
 
+    
+
     let songUL=document.querySelector('.songlist').getElementsByTagName('ul')[0];
     for (const song of songs_Name) {
-        songUL.innerHTML = songUL.innerHTML+`<li>${song.replaceAll('%20'," ")}</li>`;
+        songUL.innerHTML = songUL.innerHTML+`<li>
+                <img src="buttons/music.svg" class="invert" alt="">
+                <div class="songInfo">
+                  <div>${song.replaceAll('%20'," ")}</div>
+                </div>
+                <div class="playsong">Play Song</div>
+                <img class="invert" src="buttons/play-circle.svg" alt="">
+              </li>`;
     }
+
+
 
     let song = await getsongs();
 
-    // let audio = new Audio(song[0]);
-    // console.log(audio)
-    // audio.play();
+    playaudio(songs_Name[0]+".mp3",true);
+
+
+   Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach((e)=>{
+    e.addEventListener("click",async ()=>{
+        playaudio(e.querySelector(".songInfo").firstElementChild.innerHTML+".mp3");
+    })
+   })
+
+
+
+
+   play.addEventListener("click",()=>{
+    if(currentsong.paused){
+        currentsong.play();
+        play.src="buttons/pause-button.svg";
+    }
+    else{
+        currentsong.pause();
+        play.src="buttons/play-button.svg"
+    }
+   })
+
+
+
+   currentsong.addEventListener("timeupdate",()=>{
+        document.querySelector(".songDuration").innerHTML=`${secondsToMinutesSeconds(currentsong.currentTime)+" / "+secondsToMinutesSeconds(currentsong.duration)}`;
+   })
 
 }
+
+
+
+
 main();

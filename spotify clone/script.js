@@ -62,7 +62,7 @@ function playaudio(track,player=false){
         currentsong.play();
         play.src="buttons/pause-button.svg";
     }
-        document.querySelector(".songDuration").innerHTML="00 / 00";
+        document.querySelector(".songDuration").innerHTML="00:00 / 00:00";
         document.querySelector(".songName").innerHTML=decodeURI(track);      
 }
 
@@ -117,7 +117,18 @@ async function main(){
 
    currentsong.addEventListener("timeupdate",()=>{
         document.querySelector(".songDuration").innerHTML=`${secondsToMinutesSeconds(currentsong.currentTime)+" / "+secondsToMinutesSeconds(currentsong.duration)}`;
+        document.querySelector(".circle").style.left = (currentsong.currentTime/currentsong.duration)*100 + "%";
    })
+
+
+   document.querySelector(".rangeslider").addEventListener("click",(e)=>{
+            var percent = (e.offsetX/e.target.getBoundingClientRect().width)*100;
+            document.querySelector(".circle").style.left = percent + "%";
+            currentsong.currentTime = (percent*currentsong.duration)/100;
+   })
+
+
+   
 
 }
 

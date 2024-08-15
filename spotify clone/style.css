@@ -44,6 +44,13 @@ body{
     font-weight: 400;
     font-size: 11px;  
 }
+.left{
+    width: 27vw;
+}
+.right{
+    width: 73vw;
+    position: relative;
+}
 .nav{
     display: flex;
     height: 70px;
@@ -76,12 +83,14 @@ body{
 }
 .spotifyPlaylist{
     padding: 10px 15px;    
+    width: 100%;
 }
 .cardcontainer{
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    max-height: 70vh;
+    max-height: 68vh;
+    width: 100%;
 }
 .cards{
     padding: 15px;
@@ -132,7 +141,7 @@ body{
 }
 .music-nav-button{
     position: absolute;
-    bottom: 25px;
+    bottom: 28px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -180,10 +189,11 @@ body{
 .rangeslider{
     width: 99%;
     background-color: white;
-    height: 4px;
+    height: 6px;
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .circle{
     height: 15px;
@@ -199,7 +209,32 @@ body{
 .songDetails{
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 25px 20px;
+    font-size: 22px;
     font-weight: 100;
+}
+
+@media (max-width:1200px) {
+    .left{
+        position: absolute;
+        left: -1600%;
+        transition: all 0.1s;
+        width: 335px;
+        height: 90vh;
+        z-index: 1;
+    }
+    .right{
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+    }
+    .spotifyPlaylist{
+        width: 100vw;
+    }
+    .cardcontainer{
+        padding: 0px 65px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 88%;
+    }
 }

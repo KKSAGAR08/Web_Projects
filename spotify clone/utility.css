@@ -5,13 +5,7 @@
     margin: 5px;
     border: 2px solid red;
 }
-.left{
-    width: 27vw;
-}
-.right{
-    width: 73vw;
-    position: relative;
-}
+
 .invert{
     filter: invert(1);
     width: 20px;

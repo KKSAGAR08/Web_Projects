@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         body, html{
+            height: 100vh;
+            width: 100vw;
+         }
+    </style>
+</head>
+<body class="bg-slate-300">
+    <nav class="bg-gray-800 fixed w-full">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+               
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex shrink-0 items-center">
+                <label for="">Weather-App</label>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact-us</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+           
+            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact-us</a>
+          </div>
+        </div>
+      </nav>
+      
+
+      <div class="flex items-center justify-center h-full">
+        <div class="flex w-3/4 border-black border-2 rounded-3xl overflow-hidden h-1/2 ">
+            <div class="w-3/5 p-8 border-r-2 border-black flex flex-col items-center justify-center bg-[url('./images/photo.jpg')] bg-cover">
+                <input 
+                    type="text" 
+                    placeholder="Enter place name" 
+                    spellcheck="false" 
+                    class="p-2 border rounded-3xl p-3 w-full mb-4"
+                >
+                <button class="bg-blue-500 text-white px-4 py-2">Submit</button>
+            </div>
+            <div class="w-2/5 bg-white">
+                <h1 class="m-5 text-3xl font-semibold">Today</h1>
+                <div class="border-black border-2 rounded-3xl w-5/6 h-1/2 my-auto mx-auto flex">
+                    <div class="w-1/2">
+                        <div class="h-1/2 flex items-center justify-center">
+                            <h1 class="text-7xl font-semibold">32°</h1>
+                        </div>
+                        <div class="h-1/3">
+                            <h3 class="mx-6 py-3 text-3xl font-medium">Sunny</h3>
+                        </div>
+                        <div class="text-xs flex items-center justify-center">
+                            <p>Monday 27 july 2024</p>
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <div class="flex text-slate-500 justify-center flex-col h-full">
+                            <div>
+                                <label>Feels-Like <label>32°</label></label>
+                               </div>
+                               <div>
+                                <label>Humidity <label>66%</label></label>
+                               </div>
+                               <div>
+                                <label>UV-index <label>10</label></label>
+                               </div>
+                               <div>
+                                <label>Cloud-Cover <label>10%</label></label>
+                               </div>
+                               <div>
+                                <label>visiblity <label>5km</label></label>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

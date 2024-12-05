@@ -5,6 +5,10 @@
 }
 body{
     background-color: #222;
+    background-image: url("./weather-app-img/images/pngtree-white-cloud-on-blue-sky-weather-background-image_410050.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .card{
     width: 90%;

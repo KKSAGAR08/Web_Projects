@@ -1,5 +1,6 @@
 const apiKey = "63118f93d68eccb578e2ec58095660da";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+
 const searchBox = document.querySelector(".search input");
 const clickButton = document.querySelector(".search button");
 
@@ -24,7 +25,6 @@ clickButton.addEventListener("click",()=>{
     checkWheather(searchBox.value);
 })
 
-checkWheather();
 
 
 

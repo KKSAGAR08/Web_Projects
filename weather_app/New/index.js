@@ -2,6 +2,8 @@ const date = new Date();
 const currentDate = date.toString()
 const value = currentDate.split(" ")
 
+const count = 0;
+
 const newDate = value[0]+" "+value[1]+" "+value[2]+" "+value[3];
 document.querySelector(".date").innerHTML = newDate;
 
@@ -26,6 +28,13 @@ async function checkWheather(city) {
     document.querySelector(".wind").innerHTML = Math.round(data.wind.speed)+"km/h"
     document.querySelector(".cloud").innerHTML = data.clouds.all+"%"
     document.querySelector(".sea_level").innerHTML = data.main.sea_level
+
+    if(count === 0){
+    document.querySelector(".search-box-div").classList.add("w-3/5");
+    document.querySelector(".parent-box").classList.add("w-3/4");
+    document.querySelector(".weather-box").classList.remove("hidden")
+    document.querySelector(".weather-box").classList.add("block")
+    }
 }
 
 clickButton.addEventListener("click",()=>{
